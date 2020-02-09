@@ -2,23 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d164710-327d-4d9a-b6dc-2aa922f335c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client/eureka-client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/java/com/wangqing/eurekaclient/EurekaClientApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-client/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-security-server/eureka-security-server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-security-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-security-server/src/main/java/com/wangqing/eurekasecurityserver/EurekaSecurityServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-security-server/src/main/java/com/wangqing/eurekasecurityserver/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-security-server/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-service/src/main/java/com/wangqing/ribbonservice/RibbonServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-service/src/main/java/com/wangqing/ribbonservice/UserRibbonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ribbon-service/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/wangqing/userservice/UserApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/wangqing/userservice/UserServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/user-service.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/eureka-server.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/org/example/eurekaserver/EurekaServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/wangqing/eurekaserver/EurekaServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/org/example/eurekaserver/EurekaServerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-client/eureka-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ribbon-service/ribbon-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-security-server/eureka-security-server.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +78,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -99,7 +98,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaSecurityServerApplication">
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
     <configuration name="EurekaClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="eureka-client" />
       <extension name="coverage">
@@ -140,11 +139,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RibbonServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ribbon-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangqing.ribbonservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangqing.ribbonservice.RibbonServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangqing.userservice.UserServiceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplicationReplica" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangqing.userservice.UserServiceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <additionalParameters>
+        <param>
+          <option name="enabled" value="true" />
+          <option name="name" value="server.port" />
+          <option name="value" value="8202" />
+        </param>
+      </additionalParameters>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.UserServiceApplication" />
+      <item itemvalue="Spring Boot.UserServiceApplicationReplica" />
+      <item itemvalue="Spring Boot.EurekaClientApplication" />
+      <item itemvalue="Spring Boot.EurekaSecurityServerApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.RibbonServiceApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.RibbonServiceApplication" />
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.EurekaSecurityServerApplication" />
         <item itemvalue="Spring Boot.EurekaClientApplication" />
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -157,6 +201,11 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
@@ -185,6 +234,8 @@
       <workItem from="1581176374664" duration="904000" />
       <workItem from="1581177799539" duration="1270000" />
       <workItem from="1581217217777" duration="1267000" />
+      <workItem from="1581231995008" duration="2726000" />
+      <workItem from="1581235775863" duration="1235000" />
     </task>
     <servers />
   </component>
@@ -195,53 +246,68 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="125" y="174" width="1109" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581177985916">
-      <screen x="0" y="0" width="1440" height="929" />
+    <state x="0" y="0" width="1366" height="723" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581236710612">
+      <screen x="0" y="0" width="1366" height="723" />
     </state>
+    <state x="0" y="0" width="1366" height="723" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.723@0.0.1366.723" timestamp="1581236710612" />
     <state x="125" y="174" width="1109" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.929@0.0.1440.929" timestamp="1581177985916" />
+    <state x="538" y="254" width="290" height="215" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581236566884">
+      <screen x="0" y="0" width="1366" height="723" />
+    </state>
+    <state x="538" y="254" width="290" height="215" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.723@0.0.1366.723" timestamp="1581236566884" />
     <state x="458" y="188" key="FileChooserDialogImpl" timestamp="1581131729435">
       <screen x="0" y="0" width="1440" height="929" />
     </state>
     <state x="458" y="188" key="FileChooserDialogImpl/0.0.1440.929@0.0.1440.929" timestamp="1581131729435" />
-    <state width="944" height="396" key="GridCell.Tab.0.bottom" timestamp="1581218699516">
-      <screen x="0" y="0" width="1440" height="929" />
+    <state width="902" height="238" key="GridCell.Tab.0.bottom" timestamp="1581237091510">
+      <screen x="0" y="0" width="1366" height="723" />
     </state>
+    <state width="902" height="238" key="GridCell.Tab.0.bottom/0.0.1366.723@0.0.1366.723" timestamp="1581237091510" />
     <state width="944" height="396" key="GridCell.Tab.0.bottom/0.0.1440.929@0.0.1440.929" timestamp="1581218699516" />
-    <state width="944" height="396" key="GridCell.Tab.0.center" timestamp="1581218699516">
-      <screen x="0" y="0" width="1440" height="929" />
+    <state width="902" height="238" key="GridCell.Tab.0.center" timestamp="1581237091507">
+      <screen x="0" y="0" width="1366" height="723" />
     </state>
+    <state width="902" height="238" key="GridCell.Tab.0.center/0.0.1366.723@0.0.1366.723" timestamp="1581237091507" />
     <state width="944" height="396" key="GridCell.Tab.0.center/0.0.1440.929@0.0.1440.929" timestamp="1581218699516" />
-    <state width="944" height="396" key="GridCell.Tab.0.left" timestamp="1581218699516">
-      <screen x="0" y="0" width="1440" height="929" />
+    <state width="902" height="238" key="GridCell.Tab.0.left" timestamp="1581237091506">
+      <screen x="0" y="0" width="1366" height="723" />
     </state>
+    <state width="902" height="238" key="GridCell.Tab.0.left/0.0.1366.723@0.0.1366.723" timestamp="1581237091506" />
     <state width="944" height="396" key="GridCell.Tab.0.left/0.0.1440.929@0.0.1440.929" timestamp="1581218699516" />
-    <state width="944" height="396" key="GridCell.Tab.0.right" timestamp="1581218699516">
-      <screen x="0" y="0" width="1440" height="929" />
+    <state width="902" height="238" key="GridCell.Tab.0.right" timestamp="1581237091509">
+      <screen x="0" y="0" width="1366" height="723" />
     </state>
+    <state width="902" height="238" key="GridCell.Tab.0.right/0.0.1366.723@0.0.1366.723" timestamp="1581237091509" />
     <state width="944" height="396" key="GridCell.Tab.0.right/0.0.1440.929@0.0.1440.929" timestamp="1581218699516" />
-    <state width="944" height="396" key="GridCell.Tab.1.bottom" timestamp="1581218699516">
-      <screen x="0" y="0" width="1440" height="929" />
+    <state width="902" height="238" key="GridCell.Tab.1.bottom" timestamp="1581237091514">
+      <screen x="0" y="0" width="1366" height="723" />
     </state>
+    <state width="902" height="238" key="GridCell.Tab.1.bottom/0.0.1366.723@0.0.1366.723" timestamp="1581237091514" />
     <state width="944" height="396" key="GridCell.Tab.1.bottom/0.0.1440.929@0.0.1440.929" timestamp="1581218699516" />
-    <state width="944" height="396" key="GridCell.Tab.1.center" timestamp="1581218699516">
-      <screen x="0" y="0" width="1440" height="929" />
+    <state width="902" height="238" key="GridCell.Tab.1.center" timestamp="1581237091513">
+      <screen x="0" y="0" width="1366" height="723" />
     </state>
+    <state width="902" height="238" key="GridCell.Tab.1.center/0.0.1366.723@0.0.1366.723" timestamp="1581237091513" />
     <state width="944" height="396" key="GridCell.Tab.1.center/0.0.1440.929@0.0.1440.929" timestamp="1581218699516" />
-    <state width="944" height="396" key="GridCell.Tab.1.left" timestamp="1581218699516">
-      <screen x="0" y="0" width="1440" height="929" />
+    <state width="902" height="238" key="GridCell.Tab.1.left" timestamp="1581237091512">
+      <screen x="0" y="0" width="1366" height="723" />
     </state>
+    <state width="902" height="238" key="GridCell.Tab.1.left/0.0.1366.723@0.0.1366.723" timestamp="1581237091512" />
     <state width="944" height="396" key="GridCell.Tab.1.left/0.0.1440.929@0.0.1440.929" timestamp="1581218699516" />
-    <state width="944" height="396" key="GridCell.Tab.1.right" timestamp="1581218699516">
-      <screen x="0" y="0" width="1440" height="929" />
+    <state width="902" height="238" key="GridCell.Tab.1.right" timestamp="1581237091513">
+      <screen x="0" y="0" width="1366" height="723" />
     </state>
+    <state width="902" height="238" key="GridCell.Tab.1.right/0.0.1366.723@0.0.1366.723" timestamp="1581237091513" />
     <state width="944" height="396" key="GridCell.Tab.1.right/0.0.1440.929@0.0.1440.929" timestamp="1581218699516" />
-    <state x="73" y="0" key="SettingsEditor" timestamp="1581217929920">
-      <screen x="0" y="0" width="1440" height="929" />
+    <state x="238" y="0" key="SettingsEditor" timestamp="1581236563418">
+      <screen x="0" y="0" width="1366" height="723" />
     </state>
+    <state x="238" y="0" key="SettingsEditor/0.0.1366.723@0.0.1366.723" timestamp="1581236563418" />
     <state x="73" y="0" key="SettingsEditor/0.0.1440.929@0.0.1440.929" timestamp="1581217929920" />
-    <state x="0" y="71" width="1440" height="730" key="new project wizard" timestamp="1581217926059">
-      <screen x="0" y="0" width="1440" height="929" />
+    <state x="0" y="0" width="1366" height="723" key="new project wizard" timestamp="1581234828474">
+      <screen x="0" y="0" width="1366" height="723" />
     </state>
+    <state x="0" y="0" width="1366" height="723" key="new project wizard/0.0.1366.723@0.0.1366.723" timestamp="1581234828474" />
     <state x="0" y="71" width="1440" height="730" key="new project wizard/0.0.1440.929@0.0.1440.929" timestamp="1581217926059" />
   </component>
 </project>

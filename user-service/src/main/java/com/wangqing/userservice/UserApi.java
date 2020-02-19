@@ -17,6 +17,4 @@ public class UserApi {
         return new String(serverPort);
     }
 
-
-
 }
